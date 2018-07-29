@@ -5,13 +5,15 @@ using System.Text;
 using System.Xml.Linq;
 using Outlook = Microsoft.Office.Interop.Outlook;
 using Office = Microsoft.Office.Core;
+using System.Diagnostics;
 
 namespace OutlookAttachmentViewer
 {
-    public partial class ThisAddIn
+    public partial class AttachmentViewer
     {
         private void ThisAddIn_Startup(object sender, System.EventArgs e)
         {
+
         }
 
         private void ThisAddIn_Shutdown(object sender, System.EventArgs e)
@@ -19,6 +21,8 @@ namespace OutlookAttachmentViewer
             // Note: Outlook no longer raises this event. If you have code that 
             //    must run when Outlook shuts down, see https://go.microsoft.com/fwlink/?LinkId=506785
         }
+
+
 
         #region VSTO generated code
 
